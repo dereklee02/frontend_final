@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* NAVIGATION */
 .NavGroup {
   display:flex;
   justify-content: center;
@@ -31,17 +31,205 @@ code {
   color: #495E57;
   text-decoration: none;
 }
+/*HERO*/
 
+#hero {
+  background-color: #495E57;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+#hero img {
+  margin-bottom: -50px;
+  margin-top:30px;
+  border-radius: 10px;
+}
+
+.heroDetails h1 {
+  font: 64pt markazi-text;
+  color: #F4CE14;
+  margin-bottom:-10px;
+}
+
+#city {
+  color:white;
+  font: 40pt markazi-text;
+  margin-top: 0px;
+  margin-bottom:10px;
+}
+
+.heroDetails p {
+  color:white;
+  width: 50%;
+  font-family: 'Karla', sans-serif;
+  margin-top: 0px;
+}
+
+button {
+  color:black;
+  font-family: 'Karla', sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: #F4CE14;
+  width: 25%;
+  height: 50px;
+  border-radius: 10px;
+  border-color:#F4CE14;
+}
+
+.heroDetails {
+  display:flex;
+  flex-direction: column;
+}
+/*SPECIALS*/
+#specialTop {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 38rem;
+  margin-right: 38rem;
+  align-items: center;
+}
+
+#specialContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.specialImage {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #EDEFEE;
+  border-radius: 10px;
+}
+
+.margin20 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Karla', sans-serif;
+}
+
+#specialNamePrice {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font: 12pt markazi-text;
+}
+
+#specialNamePrice > h3 {
+  color:#F4CE14
+}
+
+#specialText {
+  font: 30pt markazi-text;
+  font-weight: 300;
+}
+/*TESTIMONIALS*/
+#testimonialField {
+  background-color: #F4CE14;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  height: 800px;
+  justify-content: center;
+  gap: 50px;
+}
+
+#testimonialField > h1 {
+  font: 40pt markazi-text;
+}
+
+#testimonialContainer {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom:100px;
+  font-family: 'Karla', sans-serif;
+}
+
+.card2 {
+  background-color: #EDEFEE;
+  width: 20rem;
+  border-radius: 10px;
+}
+
+.card2content {
+  margin-left: 5%;
+  margin-left: 5%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.row > img {
+  width:200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*CHICAGO*/
+#minneapolis {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+#ownerDesc {
+  width: 400px;
+  list-style: none;
+}
+
+#ownerDesc h1 {
+  font: 30pt markazi-text;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+#ownerDesc h2 {
+  font: 18pt markazi-text;
+  margin-top: 0px;
+}
+
+#ownerDesc p {
+  font-family: 'Karla', sans-serif;
+}
+
+#ownerImages {
+  width:400px;
+  list-style: none;
+}
+
+#ownerImage {
+  border-radius: 10px;
+}
+
+/*FOOTER*/
 .FooterSection > ul {
   display:inline-flex;
   flex-direction: column;
   list-style: none;
   justify-content: flex-start;
-  background-color: bisque;
 }
 
 .FooterSection {
-  background-color: beige;
+  background-color: #EDEFEE;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
