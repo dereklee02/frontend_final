@@ -1,11 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from "./Nav.js";
+import Footer from "./Footer.js"
 
 function App() {
   return (
-    <div className="App">
-      <p>Homepage</p>
-    </div>
+    <>
+      <header>
+      </header>
+      <Nav>
+
+      </Nav>
+      <main>
+
+      </main>
+      <Footer>
+      </Footer>
+    </>
   );
 }
 
