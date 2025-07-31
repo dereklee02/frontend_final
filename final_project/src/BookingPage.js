@@ -31,7 +31,7 @@ function BookingPage() {
   };
 
   return (
-    <main>
+    <main class="center">
       <h1>Book a Table</h1>
       <BookingForm
         availableTimes={availableTimes}

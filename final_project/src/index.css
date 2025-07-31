@@ -22,6 +22,7 @@ code {
 .NavList {
   list-style-type: none;
   margin-inline: 1.5rem;
+  padding: 10px;
 }
 
 .NavList:hover {
@@ -35,6 +36,19 @@ code {
   font-weight: bold;
   color: #495E57;
   text-decoration: none;
+}
+
+@media only screen and (max-width:1300px) {
+  .NavList > a {
+    font-size: 1em;
+  }
+  .NavList {
+    margin-inline: 0.25em;
+  }
+  .NavGroup img {
+    scale: 0.75;
+    margin-right: -40px;
+  }
 }
 /*HERO*/
 
@@ -94,6 +108,20 @@ button:hover {
   flex-direction: column;
   width: 50rem;
 }
+
+@media only screen and (max-width:1250px) {
+  .heroDetails {
+    align-items: center;
+    text-align: center;
+  }
+  button {
+    width:15rem;
+  }
+  #hero {
+    padding-bottom: 40px;
+  }
+}
+
 /*SPECIALS*/
 #specialTop {
   margin-top: 80px;
@@ -105,7 +133,7 @@ button:hover {
 }
 
 #specialButton {
-  width: 10%;
+  width: 12rem;
 }
 
 #specialContainer {
@@ -153,8 +181,16 @@ button:hover {
   font: 30pt markazi-text;
   font-weight: 300;
 }
+
+@media only screen and (max-width:720px) {
+  #specialButton {
+    margin-bottom: 10px;
+  }
+}
+
 /*TESTIMONIALS*/
 #testimonialField {
+  padding-top: 100px;
   background-color: #F4CE14;
   margin-top: 120px;
   display: flex;
@@ -207,9 +243,17 @@ button:hover {
   border-radius: 10px;
 }
 
+@media only screen and (max-width:665px) {
+  #testimonialField {
+    padding-top: 395px;
+    padding-bottom: 300px;
+  }
+}
+
 /*CHICAGO*/
 #minneapolis {
   display: flex;
+  flex-wrap:wrap-reverse;
   justify-content: center;
   margin-bottom: 100px;
 }
@@ -256,10 +300,6 @@ button:hover {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-    font-family: 'Karla', sans-serif;
-  color: #495E57;
-  text-decoration: none;
-  margin-bottom:6px;
 }
 
 .FooterSection img {
@@ -287,4 +327,97 @@ button:hover {
     font-family: 'Karla', sans-serif;
     color: #495E57;
     margin-bottom: 6px;
+}
+
+/*BOOKING PAGE*/
+.center {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FBDABB;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.center > h1 {
+  font: 40pt markazi-text;
+  color: #495E57;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom: 10px;
+}
+
+.formGroup label {
+  width:max-content;
+  margin-right: 10px;
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+  color:#495E57
+}
+
+#submit {
+  margin-bottom: 100px;
+  background-color: #495E57;
+  color: #F4CE14;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  width: 12rem;
+  height: 2rem;
+  justify-self: center;
+  border-radius: 10px;
+}
+
+#submit:hover:enabled {
+  scale: 1.05;
+}
+
+#submit:disabled {
+  background-color:#FFFFFF;
+  color: #FFF0FF;
+}
+
+/*CONFIRMATION*/
+.confirmed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBDABB;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.confirmed box {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  justify-items: center;
+  font-family: 'Karla', sans-serif;
+  color:#495E57;
+  border-radius: 10px;
+}
+
+.confirmed > p {
+  font: 20pt markazi-text;
+  color:#495E57;
+}
+
+.confirmed > h1 {
+  font: 40pt markazi-text;
+  color:#495E57
+}
+
+.confirmed box:hover {
+  background-color: #495E57;
+  color: #F4CE14;
 }
