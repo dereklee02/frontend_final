@@ -9,6 +9,7 @@ import Chicago from './Chicago.js';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './Homepage';
 import BookingPage from './BookingPage';
+import ConfirmedBooking from './ConfirmedBooking.js';
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
 
       <main>
         <Routes>
-          <Route
-            path="/"
-            element={
+          <Route path="/" element={
               <>
                 <CallToAction />
                 <Specials />
@@ -30,6 +29,7 @@ function App() {
             }
           />
           <Route path="/booking" element={<BookingPage />} />
+          <Route path="/confirmed" element={<ConfirmedBooking/>}/>
         </Routes>
       </main>
 
