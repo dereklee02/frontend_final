@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import BookingForm from './BookingForm';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 
 function updateTimes(state, action) {
   switch (action.type) {

@@ -24,7 +24,7 @@ const Specials = () => {
         <>
             <container id="specialTop">
                 <h2 id="specialText">This week's specials!</h2>
-                <button>Online Menu</button>
+                <button id="specialButton">Online Menu</button>
             </container>
             <container id="specialContainer">
                 {specialItems.map((item) => (

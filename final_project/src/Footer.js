@@ -1,3 +1,5 @@
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 const Footer = () => {
     return (
         <>
@@ -9,8 +11,7 @@ const Footer = () => {
                         <h3>Doormat Navigation</h3>
                         <a href="/#home">Home</a>
                         <a href="/#about">About</a>
-                        <a href="/#Menu">Menu</a>
-                        <a href="/#Reservations">Reservations</a>
+                        <a href="/#Menu">Menu</a><Link to="/booking">Reservations</Link>
                         <a href="/#order-online">Order Online</a>
                         <a href="/#login">Login</a>
                 </ul>
